@@ -1,8 +1,8 @@
 {
-  "name": "morphp/medas-placeholder",
-  "description": "Medas placeholder",
+  "name": "morphp/medas-pdo-sqlite-migration-builder",
+  "description": "Medas PDO SQLite Migration Builder",
   "keywords": [
-    "placeholder"
+    "storage"
   ],
   "authors": [
     {
@@ -13,6 +13,11 @@
   "type": "library",
   "require": {
     "morphp/medas-core": "^4",
+    "morphp/medas-entity-manager": "^3",
+    "morphp/medas-file-builder": "^4",
+    "morphp/medas-migration-builder": "^1",
+    "morphp/medas-pdo-storage": "^4.6",
+    "morphp/medas-storage-manager": "^4.5",
     "php": "^8.4"
   },
   "require-dev": {
@@ -22,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Medas\\Placeholder\\": "src/"
+      "Medas\\PdoSqliteMigrationBuilder\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Medas\\PlaceholderTest\\": "tests/"
+      "Medas\\PdoSqliteMigrationBuilderTest\\": "tests/"
     }
   }
 }
